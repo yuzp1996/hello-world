@@ -1,0 +1,4 @@
+web:
+  image: hello-world:latest
+  ports:
+    - "8088:80"

@@ -1,0 +1,20 @@
+apiVersion: devops.alauda.io/v1alpha1
+kind: JenkinsBinding
+metadata:
+  name: myjenkins-1
+  namespace: sywang
+spec:
+  jenkins:
+    name: myjenkins
+  account:
+    secret:
+      name: secret-jenkins
+      usernameKey: username
+      apiTokenKey: apitoken
+status:
+  # status: Creating
+  # http:
+  #   statusCode: 403
+  #   response: "<html></html>"
+  #   delay: "134ms"
+  #   lastAttempt: "2018-02-22T10:32:32"

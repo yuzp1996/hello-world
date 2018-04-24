@@ -1,0 +1,12 @@
+apiVersion: devops.alauda.io/v1alpha1
+kind: Jenkins
+metadata:
+  name: myjenkins
+  annotations:
+    alauda.io/displayName: My new jenkins
+    alauda.io/description: This is the main jenkins service used
+    alauda.io/product: Alauda Devops
+    alauda.io/productVersion: v0.1
+spec:
+  http:
+    host: "http://myjenkins.com:8080/"
