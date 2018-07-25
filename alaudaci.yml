@@ -1,6 +1,6 @@
 version: "0.1.0"
 pre_ci_boot:
-    image: index.alauda.cn/alaudaorg/zpyuregis
-    tag: syncimagealauda
+    image: index.docker.io/yugougou/fromalauda
+    tag: congratulation
 ci:
     - echo "gogogo"
