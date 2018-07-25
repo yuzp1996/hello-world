@@ -1,6 +1,6 @@
 version: "0.1.0"
 pre_ci_boot:
-    image: 172.21.0.22:5000/testproject
-    tag: latest
+    image: index.alauda.cn/alaudaorg/zpyuregis
+    tag: syncimagealauda
 ci:
     - echo "gogogo"
