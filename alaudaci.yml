@@ -1,6 +1,6 @@
 version: "0.1.0"
 pre_ci_boot:
-    image: index.docker.io/yugougou/fromalauda
-    tag: congratulation
+    image: 172.21.0.22:5000/testproject
+    tag: latest
 ci:
     - echo "gogogo"
