@@ -1,6 +1,6 @@
 version: "0.1.0"
 pre_ci_boot:
-    image: index.docker.io/yugougou/get-started
-    tag: syncimage
+    image: index.docker.io/yugougou/fromalauda
+    tag: congratulation
 ci:
     - echo "gogogo"
