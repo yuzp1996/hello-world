@@ -3,4 +3,13 @@ pre_ci_boot:
     image: nginx
     tag: latest
 ci:
-    - echo "gogogo"
+    - cp -r . $GOPATH/src/enigma/ && cd $GOPATH/src/enigma
+    - make compile
+    - make build-migrate
+    - cd $GOPATH/src/
+    - cp enigma/Dockerfile $ALAUDACI_DEST_DIR/Dockerfile
+    - cp enigma/*.py $ALAUDACI_DEST_DIR/
+    - cp enigma/*.sh $ALAUDACI_DEST_DIR/
+    - cp enigma/config/*.conf $ALAUDACI_DEST_DIR/
+    - cp -r enigma/migrations $ALAUDACI_DEST_DIR/migrations
+    - cp -r enigma/pipeline-templates $ALAUDACI_DEST_DIR/
